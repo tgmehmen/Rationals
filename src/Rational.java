@@ -1,11 +1,14 @@
 public class Rational {
     private int num;
     private int denom;
+    /** initial constructor */
     public Rational(){
         num=1;
         denom=1;
-/**This comment can be seen externally*/
     }
+    /** Constructor with parameters
+    * @param num numerator
+     * @param denom denominator*/
     public Rational(int num,int denom){
         if (denom==0){
             throw new IllegalArgumentException("The denominator cannot be 0");
