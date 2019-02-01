@@ -4,7 +4,7 @@ public class Rational {
     public Rational(){
         num=1;
         denom=1;
-
+/**This comment can be seen externally*/
     }
     public Rational(int num,int denom){
         if (denom==0){
@@ -18,7 +18,7 @@ public class Rational {
             this.denom = denom;
         }
     }
-
+/** returns string of rational in reduced from */
     public String reduce(){
         int num1=num/this.GCD();
         int denom1=denom/this.GCD();
@@ -44,6 +44,7 @@ public class Rational {
         Rational r1=new Rational(top,denom1);
         return (r1.reduce());
     }
+
 
     public String multiply(Rational b){
         int denom1=this.denom*b.denom;
